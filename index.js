@@ -127,7 +127,7 @@ mongoose.connect('mongodb+srv://pauloRicardo:bruxinhas291@cluster0.exnok.mongodb
 
 
 
-const PORT = 5000;
-app.listen(PORT, (req , res) => {
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
     console.log('Server rodando! ');
 });
